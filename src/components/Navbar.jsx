@@ -57,9 +57,10 @@ const Navbar = () => {
               <img
                 src={user.photoURL || {profile}}
                 alt="Profile"
-                className="border-2 border-[#e3e5f3d5] w-11 mr-2 rounded-full object-cover cursor-pointer"
+                className="border-2 border-[#e3e5f3d5] w-11 mr-2 rounded-full object-cover cursor-pointer ml-16"
               />
-              <div className="absolute left-0 w-auto bg-white text-gray-800 text-sm shadow-lg p-2 rounded hidden group-hover:block">
+              <div className="absolute -right-4
+               top-[60px] max-w-max bg-gray-800 text-white text-sm shadow-lg p-2 rounded hidden group-hover:block">
                 {user.displayName || "User"}
               </div>
             </div>

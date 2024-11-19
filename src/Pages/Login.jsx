@@ -1,27 +1,48 @@
-import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { useContext, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 
 const Login = () => {
-  const { userLogIn, setUser } = useContext(AuthContext);
+  const { userLogIn, setUser, auth } = useContext(AuthContext);
+
+  const [error, setError] = useState("");
+  const navigate = useNavigate();
+
+  const googleProvider = new GoogleAuthProvider();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
-    
 
     userLogIn(email, password)
       .then((result) => {
         const user = result.user;
         setUser(user);
+        setError("");
+        navigate("/");
       })
       .catch((error) => {
-        
-        const errorMessage = error.message;
-        alert(errorMessage);
+        setError("Invalid email or password.");
       });
   };
+
+  const handleGoogleLogin = () => {
+    signInWithPopup(auth, googleProvider)
+      .then((result) => {
+        const user = result.user;
+        setUser(user);
+        setError("");
+        navigate("/");
+      })
+
+      .catch((error) => {
+        console.log("Google Login Error:", error.message);
+        setError("Failed to login with Google.");
+      });
+  };
+
   return (
     <div className=" flex justify-center items-center min-h-screen  bg-[#f2f4ff]">
       <div className="card bg-[#e3e5f3d5] border-2 border-[#556180] w-full max-w-lg shrink-0  rounded-3xl p-10">
@@ -52,11 +73,10 @@ const Login = () => {
               className="input input-bordered"
               required
             />
-            {/* {error.login && (
-              <label className="label text-sm text-red-600">
-                {error.login}
-              </label>
-            )} */}
+            {error && (
+              <label className="label text-sm text-red-700">{error}</label>
+            )}
+            
             <label className="label">
               <a href="#" className="label-text-alt link link-hover">
                 Forgot password?
@@ -66,6 +86,15 @@ const Login = () => {
           <div className="form-control mt-6">
             <button className="btn btn-neutral rounded-full">Login</button>
           </div>
+
+          <div className="divider text-black">OR</div>
+
+          <button
+            onClick={handleGoogleLogin}
+            className="btn btn-outline rounded-full"
+          >
+            Continue with Google
+          </button>
         </form>
         <p className="text-center font-semibold">
           Don't Have An Account ?{" "}
