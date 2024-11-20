@@ -1,5 +1,20 @@
+import { useContext } from "react";
+import { AuthContext } from "../provider/AuthProvider";
+import { useNavigate } from "react-router-dom";
+
 const Card = ({ card }) => {
-  const { adventureTitle, image, ecoFriendlyFeatures } = card;
+  const {user} = useContext(AuthContext);
+  const navigate = useNavigate();
+
+
+  const handleExploreNow = (id) =>{
+    if(user){
+      navigate(`/adventureDetails/${id}`)
+    }else{
+      navigate('/auth/login');
+    }
+  }
+  const { adventureTitle, image, ecoFriendlyFeatures, id } = card;
   return (
     <div className="border  rounded-lg shadow-lg p-6 bg-white">
       {/* Adventure Image */}
@@ -27,7 +42,7 @@ const Card = ({ card }) => {
 
      
       <button
-        onClick={() => handleExploreNow(card.id)}
+        onClick={()=>handleExploreNow(id)}
         className="btn text-white bg-[#0F1035] hover:text-[#0F1035] hover:bg-[#0f10356c]  mt-6 w-full rounded-xl"
       >
         Explore Now

@@ -7,6 +7,7 @@ import AuthLayouts from "../layouts/AuthLayouts";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import Cards from "../components/Cards";
+import AdventureDetails from "../Pages/AdventureDetails";
 
 const router = createBrowserRouter([
     {
@@ -23,6 +24,11 @@ const router = createBrowserRouter([
                 loader:() => fetch('../mountain.json').then(res => res.json()),
               },
             ],
+        },
+        {
+            path: "/adventureDetails/:id",
+            element: <AdventureDetails></AdventureDetails>,
+            loader:({params}) => fetch('../mountain.json').then(res => res.json()),
         },
         {
             path: "/update-profile",
