@@ -69,8 +69,8 @@ const Register = () => {
   };
 
   return (
-    <div className=" flex justify-center items-center py-7  bg-[#f2f4ff]">
-      <div className="card bg-[#e3e5f3d5] w-full  max-w-lg shrink-0 border-2 border-[#556180] rounded-3xl p-9">
+    <div className=" flex justify-center items-center md:py-7  bg-[#f2f4ff]">
+      <div className="card bg-[#e3e5f3d5] w-full  md:max-w-lg shrink-0 md:border-2 border-[#556180] md:rounded-3xl rounded-none md:p-9 px-1 py-6">
         <h2 className="text-3xl font-semibold text-center">
           Register your account
         </h2>
@@ -148,7 +148,7 @@ const Register = () => {
         </form>
         <p className="text-center font-semibold">
           Already have an account?{" "}
-          <Link className="text-red-500" to="/auth/register">
+          <Link className="text-red-500" to="/auth/login">
             Login
           </Link>
         </p>

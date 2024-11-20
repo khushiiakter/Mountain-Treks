@@ -1,0 +1,263 @@
+[
+    {
+      "id": 1,
+      "adventureTitle": "Everest Base Camp Trek",
+      "image": "",
+      "categoryName": "Mountain Treks",
+      "shortDescription": "Experience the thrill of trekking to the base of the world's tallest peak.",
+      "adventureCost": 2500,
+      "bookingAvailability": true,
+      "location": "Nepal",
+      "duration": "14 Days",
+      "adventureLevel": "Advanced",
+      "includedItems": [
+        "Guide services",
+        "Accommodation in teahouses",
+        "Meals (breakfast, lunch, dinner)",
+        "Trekking permits"
+      ],
+      "ecoFriendlyFeatures": [
+        "Plastic-free zones",
+        "Support local communities",
+        "Minimal environmental impact"
+      ],
+      "maxGroupSize": 12,
+      "specialInstructions": [
+        "Bring suitable trekking gear",
+        "Ensure physical fitness",
+        "Respect local culture"
+      ]
+    },
+    {
+      "id": 2,
+      "adventureTitle": "Great Barrier Reef Dive",
+      "image": "",
+      "categoryName": "Ocean Dives",
+      "shortDescription": "Discover the vibrant marine life of the world's largest coral reef system.",
+      "adventureCost": 2000,
+      "bookingAvailability": true,
+      "location": "Australia",
+      "duration": "7 Days",
+      "adventureLevel": "Intermediate",
+      "includedItems": [
+        "Professional dive instructor",
+        "Diving gear",
+        "Accommodation on a liveaboard boat",
+        "Marine park fees"
+      ],
+      "ecoFriendlyFeatures": [
+        "Eco-certified tours",
+        "Reef-safe sunscreen policies",
+        "Support marine conservation programs"
+      ],
+      "maxGroupSize": 10,
+      "specialInstructions": [
+        "Must have basic diving certification",
+        "Follow reef protection guidelines",
+        "Carry only reef-safe sunscreen"
+      ]
+    },
+    {
+      "id": 3,
+      "adventureTitle": "Safari in Serengeti",
+      "image": "https://example.com/images/serengeti_safari.jpg",
+      "categoryName": "Wildlife Safaris",
+      "shortDescription": "Witness the incredible wildlife migration in the vast Serengeti plains.",
+      "adventureCost": 3000,
+      "bookingAvailability": false,
+      "location": "Tanzania",
+      "duration": "10 Days",
+      "adventureLevel": "Beginner",
+      "includedItems": [
+        "Private safari vehicle",
+        "Guided game drives",
+        "Luxury tented camp accommodation",
+        "Park entrance fees"
+      ],
+      "ecoFriendlyFeatures": [
+        "Community-led tourism",
+        "Carbon-offset safaris",
+        "Minimized environmental footprint"
+      ],
+      "maxGroupSize": 6,
+      "specialInstructions": [
+        "Use binoculars for distant wildlife",
+        "Do not feed animals",
+        "Carry eco-friendly supplies"
+      ]
+    },
+    {
+      "id": 4,
+      "adventureTitle": "Amazon Rainforest Expedition",
+      "image": "https://example.com/images/amazon_expedition.jpg",
+      "categoryName": "Forest Expeditions",
+      "shortDescription": "Explore the rich biodiversity of the world's largest rainforest.",
+      "adventureCost": 1800,
+      "bookingAvailability": true,
+      "location": "Brazil",
+      "duration": "8 Days",
+      "adventureLevel": "Moderate",
+      "includedItems": [
+        "Experienced jungle guide",
+        "All meals and snacks",
+        "Overnight stays in eco-lodges",
+        "Canoeing equipment"
+      ],
+      "ecoFriendlyFeatures": [
+        "Conservation-focused activities",
+        "Low-impact travel",
+        "Support for indigenous communities"
+      ],
+      "maxGroupSize": 8,
+      "specialInstructions": [
+        "Wear insect-repellent clothing",
+        "Carry reusable water bottles",
+        "Avoid disturbing wildlife"
+      ]
+    },
+    {
+      "id": 5,
+      "adventureTitle": "Yosemite Camping Retreat",
+      "image": "",
+      "categoryName": "Camping Retreats",
+      "shortDescription": "Unplug and reconnect with nature in the scenic Yosemite National Park.",
+      "adventureCost": 800,
+      "bookingAvailability": true,
+      "location": "United States",
+      "duration": "4 Days",
+      "adventureLevel": "Beginner",
+      "includedItems": [
+        "Tents and camping gear",
+        "Daily guided hikes",
+        "Campfire meals",
+        "Park entrance fees"
+      ],
+      "ecoFriendlyFeatures": [
+        "Leave-no-trace principles",
+        "Biodegradable products",
+        "Local community involvement"
+      ],
+      "maxGroupSize": 15,
+      "specialInstructions": [
+        "Carry proper outdoor gear",
+        "Avoid loud noises to respect nature",
+        "Follow campfire safety rules"
+      ]
+    },
+    {
+      "id": 6,
+      "adventureTitle": "Zambezi River Rafting",
+      "image": "https://example.com/images/zambezi_rafting.jpg",
+      "categoryName": "River Adventures",
+      "shortDescription": "Conquer the thrilling rapids of the mighty Zambezi River.",
+      "adventureCost": 1200,
+      "bookingAvailability": true,
+      "location": "Zimbabwe",
+      "duration": "3 Days",
+      "adventureLevel": "Advanced",
+      "includedItems": [
+        "Professional rafting guide",
+        "Safety gear",
+        "Riverside camping",
+        "Meals and drinks"
+      ],
+      "ecoFriendlyFeatures": [
+        "Water purification on-site",
+        "Sustainable tourism practices",
+        "Plastic-free policy"
+      ],
+      "maxGroupSize": 8,
+      "specialInstructions": [
+        "Wear appropriate water shoes",
+        "Be prepared for physically demanding activities",
+        "Follow safety instructions at all times"
+      ]
+    },
+    {
+      "id": 7,
+      "adventureTitle": "Desert Trek in Wadi Rum",
+      "image": "https://example.com/images/wadi_rum_trek.jpg",
+      "categoryName": "Desert Exploration",
+      "shortDescription": "Explore the stunning red sands and cliffs of Wadi Rum on a guided trek.",
+      "adventureCost": 1500,
+      "bookingAvailability": true,
+      "location": "Jordan",
+      "duration": "5 Days",
+      "adventureLevel": "Moderate",
+      "includedItems": [
+        "Local Bedouin guide",
+        "Camel rides",
+        "Traditional meals",
+        "Overnight stays in desert camps"
+      ],
+      "ecoFriendlyFeatures": [
+        "Minimal impact trekking",
+        "Support local Bedouin tribes",
+        "Eco-friendly camping equipment"
+      ],
+      "maxGroupSize": 10,
+      "specialInstructions": [
+        "Carry sun protection gear",
+        "Stay hydrated",
+        "Respect desert wildlife"
+      ]
+    },
+    {
+      "id": 8,
+      "adventureTitle": "Mangrove Kayaking in Kerala",
+      "image": "https://example.com/images/mangrove_kayaking.jpg",
+      "categoryName": "Mangrove Forest Expeditions",
+      "shortDescription": "Paddle through serene mangroves in Kerala's scenic backwaters.",
+      "adventureCost": 500,
+      "bookingAvailability": true,
+      "location": "India",
+      "duration": "1 Day",
+      "adventureLevel": "Beginner",
+      "includedItems": [
+        "Kayaking equipment",
+        "Local guide",
+        "Refreshments",
+        "Safety gear"
+      ],
+      "ecoFriendlyFeatures": [
+        "No motorized boats",
+        "Support mangrove restoration",
+        "Eco-certified tours"
+      ],
+      "maxGroupSize": 6,
+      "specialInstructions": [
+        "Wear light, water-resistant clothing",
+        "Avoid littering in the water",
+        "Follow the guide's instructions"
+      ]
+    },
+    {
+      "id": 9,
+      "adventureTitle": "Himalayan Paragliding Adventure",
+      "image": "https://example.com/images/himalayan_paragliding.jpg",
+      "categoryName": "Aerial Adventures",
+      "shortDescription": "Soar through the skies with breathtaking views of the Himalayas.",
+      "adventureCost": 700,
+      "bookingAvailability": true,
+      "location": "India",
+      "duration": "1 Day",
+      "adventureLevel": "Intermediate",
+      "includedItems": [
+        "Certified pilot and equipment",
+        "Safety gear",
+        "Transport to take-off site",
+        "Photos and video of the flight"
+      ],
+      "ecoFriendlyFeatures": [
+        "Zero carbon emission activity",
+        "Locally sourced equipment",
+        "Conservation awareness program"
+      ],
+      "maxGroupSize": 4,
+      "specialInstructions": [
+        "Wear comfortable clothing",
+        "Avoid carrying heavy items",
+        "Follow pilot instructions"
+      ]
+    }
+  ]

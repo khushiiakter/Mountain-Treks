@@ -44,8 +44,8 @@ const Login = () => {
   };
 
   return (
-    <div className=" flex justify-center items-center min-h-screen  bg-[#f2f4ff]">
-      <div className="card bg-[#e3e5f3d5] border-2 border-[#556180] w-full max-w-lg shrink-0  rounded-3xl p-10">
+    <div className=" flex justify-center items-center md:py-7  bg-[#f2f4ff]">
+      <div className="card bg-[#e3e5f3d5]  w-full  md:max-w-lg shrink-0 md:border-2 border-[#556180] md:rounded-3xl rounded-none md:p-9 px-1 py-6">
         <h2 className="text-3xl font-semibold text-center">
           Login your account
         </h2>
@@ -83,7 +83,7 @@ const Login = () => {
               </a>
             </label>
           </div>
-          <div className="form-control mt-6">
+          <div className="form-control mt-3">
             <button className="btn btn-neutral rounded-full">Login</button>
           </div>
 

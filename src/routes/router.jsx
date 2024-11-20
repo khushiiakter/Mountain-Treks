@@ -6,6 +6,7 @@ import UserProfile from "../Pages/UserProfile";
 import AuthLayouts from "../layouts/AuthLayouts";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
+import Cards from "../components/Cards";
 
 const router = createBrowserRouter([
     {
@@ -14,7 +15,14 @@ const router = createBrowserRouter([
       children: [
         {
             path: "/",
-            element: <Home></Home>
+            element: <Home></Home>,
+            children: [
+              {
+                path: "/",
+                element: <Cards></Cards>,
+                loader:() => fetch('../mountain.json').then(res => res.json()),
+              },
+            ],
         },
         {
             path: "/update-profile",
@@ -24,23 +32,24 @@ const router = createBrowserRouter([
             path: "/user-profile",
             element: <UserProfile></UserProfile>
         },
+        {
+          path: "/auth",
+          element: <AuthLayouts></AuthLayouts>,
+          children:[
+            {
+              path: "/auth/login",
+              element: <Login></Login>, 
+            },
+            {
+              path: "/auth/register",
+              element: <Register></Register>
+            },
+    
+          ]
+        }
       ]
     },
-    {
-      path: "/auth",
-      element: <AuthLayouts></AuthLayouts>,
-      children:[
-        {
-          path: "/auth/login",
-          element: <Login></Login>, 
-        },
-        {
-          path: "/auth/register",
-          element: <Register></Register>
-        },
-
-      ]
-    }
+    
   ]);
 
 export default router;
