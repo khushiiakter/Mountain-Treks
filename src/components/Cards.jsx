@@ -1,22 +1,18 @@
-
 import { useLoaderData } from "react-router-dom";
-
+import Card from "./Card";
 
 const Cards = () => {
-    const cards = useLoaderData();
-    console.log(cards);
-    
-   
-    return (
-        <div  className="grid grid-cols-3 gap-6 container mx-auto">
-            {/* {
-                players.map(player => <Player key={player.id} player={player} handleSelectedPlayers={handleSelectedPlayers}></Player>)
-            } */}
-            {/* {
-                cards.map(card => <Card ></Card>)
-            } */}
-        </div>
-    );
+  const cards = useLoaderData();
+
+  return (
+    <div className="py-10  container mx-auto px-4">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 ">
+        {cards.map((card) => (
+          <Card key={card.id} card={card}></Card>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default Cards;

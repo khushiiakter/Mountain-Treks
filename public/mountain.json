@@ -1,263 +1,263 @@
 [
-    {
-      "id": 1,
-      "adventureTitle": "Everest Base Camp Trek",
-      "image": "",
-      "categoryName": "Mountain Treks",
-      "shortDescription": "Experience the thrill of trekking to the base of the world's tallest peak.",
-      "adventureCost": 2500,
-      "bookingAvailability": true,
-      "location": "Nepal",
-      "duration": "14 Days",
-      "adventureLevel": "Advanced",
-      "includedItems": [
-        "Guide services",
-        "Accommodation in teahouses",
-        "Meals (breakfast, lunch, dinner)",
-        "Trekking permits"
-      ],
-      "ecoFriendlyFeatures": [
-        "Plastic-free zones",
-        "Support local communities",
-        "Minimal environmental impact"
-      ],
-      "maxGroupSize": 12,
-      "specialInstructions": [
-        "Bring suitable trekking gear",
-        "Ensure physical fitness",
-        "Respect local culture"
-      ]
-    },
-    {
-      "id": 2,
-      "adventureTitle": "Great Barrier Reef Dive",
-      "image": "",
-      "categoryName": "Ocean Dives",
-      "shortDescription": "Discover the vibrant marine life of the world's largest coral reef system.",
-      "adventureCost": 2000,
-      "bookingAvailability": true,
-      "location": "Australia",
-      "duration": "7 Days",
-      "adventureLevel": "Intermediate",
-      "includedItems": [
-        "Professional dive instructor",
-        "Diving gear",
-        "Accommodation on a liveaboard boat",
-        "Marine park fees"
-      ],
-      "ecoFriendlyFeatures": [
-        "Eco-certified tours",
-        "Reef-safe sunscreen policies",
-        "Support marine conservation programs"
-      ],
-      "maxGroupSize": 10,
-      "specialInstructions": [
-        "Must have basic diving certification",
-        "Follow reef protection guidelines",
-        "Carry only reef-safe sunscreen"
-      ]
-    },
-    {
-      "id": 3,
-      "adventureTitle": "Safari in Serengeti",
-      "image": "https://example.com/images/serengeti_safari.jpg",
-      "categoryName": "Wildlife Safaris",
-      "shortDescription": "Witness the incredible wildlife migration in the vast Serengeti plains.",
-      "adventureCost": 3000,
-      "bookingAvailability": false,
-      "location": "Tanzania",
-      "duration": "10 Days",
-      "adventureLevel": "Beginner",
-      "includedItems": [
-        "Private safari vehicle",
-        "Guided game drives",
-        "Luxury tented camp accommodation",
-        "Park entrance fees"
-      ],
-      "ecoFriendlyFeatures": [
-        "Community-led tourism",
-        "Carbon-offset safaris",
-        "Minimized environmental footprint"
-      ],
-      "maxGroupSize": 6,
-      "specialInstructions": [
-        "Use binoculars for distant wildlife",
-        "Do not feed animals",
-        "Carry eco-friendly supplies"
-      ]
-    },
-    {
-      "id": 4,
-      "adventureTitle": "Amazon Rainforest Expedition",
-      "image": "https://example.com/images/amazon_expedition.jpg",
-      "categoryName": "Forest Expeditions",
-      "shortDescription": "Explore the rich biodiversity of the world's largest rainforest.",
-      "adventureCost": 1800,
-      "bookingAvailability": true,
-      "location": "Brazil",
-      "duration": "8 Days",
-      "adventureLevel": "Moderate",
-      "includedItems": [
-        "Experienced jungle guide",
-        "All meals and snacks",
-        "Overnight stays in eco-lodges",
-        "Canoeing equipment"
-      ],
-      "ecoFriendlyFeatures": [
-        "Conservation-focused activities",
-        "Low-impact travel",
-        "Support for indigenous communities"
-      ],
-      "maxGroupSize": 8,
-      "specialInstructions": [
-        "Wear insect-repellent clothing",
-        "Carry reusable water bottles",
-        "Avoid disturbing wildlife"
-      ]
-    },
-    {
-      "id": 5,
-      "adventureTitle": "Yosemite Camping Retreat",
-      "image": "",
-      "categoryName": "Camping Retreats",
-      "shortDescription": "Unplug and reconnect with nature in the scenic Yosemite National Park.",
-      "adventureCost": 800,
-      "bookingAvailability": true,
-      "location": "United States",
-      "duration": "4 Days",
-      "adventureLevel": "Beginner",
-      "includedItems": [
-        "Tents and camping gear",
-        "Daily guided hikes",
-        "Campfire meals",
-        "Park entrance fees"
-      ],
-      "ecoFriendlyFeatures": [
-        "Leave-no-trace principles",
-        "Biodegradable products",
-        "Local community involvement"
-      ],
-      "maxGroupSize": 15,
-      "specialInstructions": [
-        "Carry proper outdoor gear",
-        "Avoid loud noises to respect nature",
-        "Follow campfire safety rules"
-      ]
-    },
-    {
-      "id": 6,
-      "adventureTitle": "Zambezi River Rafting",
-      "image": "https://example.com/images/zambezi_rafting.jpg",
-      "categoryName": "River Adventures",
-      "shortDescription": "Conquer the thrilling rapids of the mighty Zambezi River.",
-      "adventureCost": 1200,
-      "bookingAvailability": true,
-      "location": "Zimbabwe",
-      "duration": "3 Days",
-      "adventureLevel": "Advanced",
-      "includedItems": [
-        "Professional rafting guide",
-        "Safety gear",
-        "Riverside camping",
-        "Meals and drinks"
-      ],
-      "ecoFriendlyFeatures": [
-        "Water purification on-site",
-        "Sustainable tourism practices",
-        "Plastic-free policy"
-      ],
-      "maxGroupSize": 8,
-      "specialInstructions": [
-        "Wear appropriate water shoes",
-        "Be prepared for physically demanding activities",
-        "Follow safety instructions at all times"
-      ]
-    },
-    {
-      "id": 7,
-      "adventureTitle": "Desert Trek in Wadi Rum",
-      "image": "https://example.com/images/wadi_rum_trek.jpg",
-      "categoryName": "Desert Exploration",
-      "shortDescription": "Explore the stunning red sands and cliffs of Wadi Rum on a guided trek.",
-      "adventureCost": 1500,
-      "bookingAvailability": true,
-      "location": "Jordan",
-      "duration": "5 Days",
-      "adventureLevel": "Moderate",
-      "includedItems": [
-        "Local Bedouin guide",
-        "Camel rides",
-        "Traditional meals",
-        "Overnight stays in desert camps"
-      ],
-      "ecoFriendlyFeatures": [
-        "Minimal impact trekking",
-        "Support local Bedouin tribes",
-        "Eco-friendly camping equipment"
-      ],
-      "maxGroupSize": 10,
-      "specialInstructions": [
-        "Carry sun protection gear",
-        "Stay hydrated",
-        "Respect desert wildlife"
-      ]
-    },
-    {
-      "id": 8,
-      "adventureTitle": "Mangrove Kayaking in Kerala",
-      "image": "https://example.com/images/mangrove_kayaking.jpg",
-      "categoryName": "Mangrove Forest Expeditions",
-      "shortDescription": "Paddle through serene mangroves in Kerala's scenic backwaters.",
-      "adventureCost": 500,
-      "bookingAvailability": true,
-      "location": "India",
-      "duration": "1 Day",
-      "adventureLevel": "Beginner",
-      "includedItems": [
-        "Kayaking equipment",
-        "Local guide",
-        "Refreshments",
-        "Safety gear"
-      ],
-      "ecoFriendlyFeatures": [
-        "No motorized boats",
-        "Support mangrove restoration",
-        "Eco-certified tours"
-      ],
-      "maxGroupSize": 6,
-      "specialInstructions": [
-        "Wear light, water-resistant clothing",
-        "Avoid littering in the water",
-        "Follow the guide's instructions"
-      ]
-    },
-    {
-      "id": 9,
-      "adventureTitle": "Himalayan Paragliding Adventure",
-      "image": "https://example.com/images/himalayan_paragliding.jpg",
-      "categoryName": "Aerial Adventures",
-      "shortDescription": "Soar through the skies with breathtaking views of the Himalayas.",
-      "adventureCost": 700,
-      "bookingAvailability": true,
-      "location": "India",
-      "duration": "1 Day",
-      "adventureLevel": "Intermediate",
-      "includedItems": [
-        "Certified pilot and equipment",
-        "Safety gear",
-        "Transport to take-off site",
-        "Photos and video of the flight"
-      ],
-      "ecoFriendlyFeatures": [
-        "Zero carbon emission activity",
-        "Locally sourced equipment",
-        "Conservation awareness program"
-      ],
-      "maxGroupSize": 4,
-      "specialInstructions": [
-        "Wear comfortable clothing",
-        "Avoid carrying heavy items",
-        "Follow pilot instructions"
-      ]
-    }
-  ]
+  {
+    "id": 1,
+    "adventureTitle": "Everest Base Camp Trek",
+    "image": "https://i.ibb.co.com/FW1cmbG/Top-7-Secrets-things-you-need-to-know-before-Starting-Everest-Base-Camp-Trek.jpg",
+    "categoryName": "Mountain Treks",
+    "shortDescription": "Experience the thrill of trekking to the base of the world's tallest peak.",
+    "adventureCost": 2500,
+    "bookingAvailability": true,
+    "location": "Nepal",
+    "duration": "14 Days",
+    "adventureLevel": "Advanced",
+    "includedItems": [
+      "Guide services",
+      "Accommodation in teahouses",
+      "Meals (breakfast, lunch, dinner)",
+      "Trekking permits"
+    ],
+    "ecoFriendlyFeatures": [
+      "Plastic-free zones",
+      "Support local communities",
+      "Minimal environmental impact"
+    ],
+    "maxGroupSize": 12,
+    "specialInstructions": [
+      "Bring suitable trekking gear",
+      "Ensure physical fitness",
+      "Respect local culture"
+    ]
+  },
+  {
+    "id": 2,
+    "adventureTitle": "Annapurna Circuit Trek",
+    "image": "https://i.ibb.co.com/8N17gBN/Discover-Nepal-s-Beauty-Annapurna-Circuit-Trek-Vista.jpg",
+    "categoryName": "Mountain Treks",
+    "shortDescription": "A stunning trek around the Annapurna range offering beautiful views of the Himalayas.",
+    "adventureCost": 2200,
+    "bookingAvailability": true,
+    "location": "Nepal",
+    "duration": "18 Days",
+    "adventureLevel": "Intermediate",
+    "includedItems": [
+      "Experienced trek guides",
+      "Teahouse accommodations",
+      "Meals (breakfast, lunch, dinner)",
+      "Trekking permits"
+    ],
+    "ecoFriendlyFeatures": [
+      "Support local Sherpa guides",
+      "Carbon offset options",
+      "Eco-friendly teahouses"
+    ],
+    "maxGroupSize": 14,
+    "specialInstructions": [
+      "Prepare for high-altitude trekking",
+      "Carry only essential gear",
+      "Acclimatize properly to avoid altitude sickness"
+    ]
+  },
+  {
+    "id": 3,
+    "adventureTitle": "Kilimanjaro Summit Trek",
+    "image": "https://i.ibb.co.com/r2mynm8/dfjdkjf.jpg",
+    "categoryName": "Mountain Treks",
+    "shortDescription": "Climb the famous Mount Kilimanjaro and enjoy spectacular views from the highest peak in Africa.",
+    "adventureCost": 3000,
+    "bookingAvailability": false,
+    "location": "Tanzania",
+    "duration": "7 Days",
+    "adventureLevel": "Advanced",
+    "includedItems": [
+      "Professional mountain guides",
+      "Camping equipment",
+      "Meals and snacks",
+      "National park fees"
+    ],
+    "ecoFriendlyFeatures": [
+      "Waste reduction program",
+      "Eco-certified mountain guides",
+      "Conservation efforts for wildlife"
+    ],
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Physical fitness is crucial",
+      "Bring warm clothing for summit",
+      "Follow eco-friendly waste disposal methods"
+    ]
+  },
+  {
+    "id": 4,
+    "adventureTitle": "Machu Picchu Inca Trail",
+    "image": "https://i.ibb.co.com/swHmZ5j/P9300867.jpg",
+    "categoryName": "Mountain Treks",
+    "shortDescription": "Follow the ancient Inca Trail and experience breathtaking views of Machu Picchu.",
+    "adventureCost": 1800,
+    "bookingAvailability": true,
+    "location": "Peru",
+    "duration": "5 Days",
+    "adventureLevel": "Moderate",
+    "includedItems": [
+      "Licensed Inca Trail guide",
+      "Camping equipment",
+      "Meals (breakfast, lunch, dinner)",
+      "Entrance to Machu Picchu"
+    ],
+    "ecoFriendlyFeatures": [
+      "Waste management system",
+      "Sustainable tourism practices",
+      "Eco-friendly camping options"
+    ],
+    "maxGroupSize": 15,
+    "specialInstructions": [
+      "Bring comfortable shoes for trekking",
+      "Acclimatize before trekking",
+      "Pack lightly to reduce environmental impact"
+    ]
+  },
+  {
+    "id": 5,
+    "adventureTitle": "Mount Fuji Summit Trek",
+    "image": "https://i.ibb.co.com/2qsD0R8/mount-fuji-night-reflections-do-2048x1152.jpg",
+    "categoryName": "Mountain Treks",
+    "shortDescription": "A scenic trek to the summit of Japan's iconic Mount Fuji, offering stunning views.",
+    "adventureCost": 1000,
+    "bookingAvailability": true,
+    "location": "Japan",
+    "duration": "2 Days",
+    "adventureLevel": "Beginner",
+    "includedItems": [
+      "Local trek guides",
+      "Camping gear",
+      "Meals on trek",
+      "Summit permit"
+    ],
+    "ecoFriendlyFeatures": [
+      "Leave-no-trace trekking",
+      "Waste-free campsites",
+      "Eco-friendly local food"
+    ],
+    "maxGroupSize": 20,
+    "specialInstructions": [
+      "Wear warm layers",
+      "Prepare for cold weather",
+      "Carry only necessary items"
+    ]
+  },
+  {
+    "id": 6,
+    "adventureTitle": "Trekking in Patagonia",
+    "image": "https://i.ibb.co.com/WxsnwHB/Argentina-Patagonia-Mount-Fitz-Roy-Lagoon-Hiking-Shereen-Mroueh-2014-IMG2751-Lg-RGB-scaled.jpg",
+    "categoryName": "Mountain Treks",
+    "shortDescription": "Explore the rugged terrain of Patagonia’s southern Andes with awe-inspiring glaciers.",
+    "adventureCost": 2400,
+    "bookingAvailability": true,
+    "location": "Argentina/Chile",
+    "duration": "12 Days",
+    "adventureLevel": "Intermediate",
+    "includedItems": [
+      "Experienced local guides",
+      "Meals and snacks",
+      "Camping and lodge accommodations",
+      "National park fees"
+    ],
+    "ecoFriendlyFeatures": [
+      "Sustainable eco-lodging",
+      "Support local communities",
+      "Use of renewable energy sources"
+    ],
+    "maxGroupSize": 14,
+    "specialInstructions": [
+      "Expect unpredictable weather",
+      "Bring durable clothing and gear",
+      "Respect local wildlife and environment"
+    ]
+  },
+  {
+    "id": 7,
+    "adventureTitle": "Dolomites Trekking",
+    "image": "https://i.ibb.co.com/mHfsPbn/Trekking-Tre-Cime-di-Lavaredo-3-Day-Dolomites-Hut-Hike.jpg",
+    "categoryName": "Mountain Treks",
+    "shortDescription": "A beautiful trek in the Italian Dolomites, known for its dramatic mountain scenery.",
+    "adventureCost": 2100,
+    "bookingAvailability": true,
+    "location": "Italy",
+    "duration": "8 Days",
+    "adventureLevel": "Moderate",
+    "includedItems": [
+      "Certified mountain guide",
+      "Accommodation in alpine huts",
+      "Meals (breakfast, lunch, dinner)",
+      "Trekking permits"
+    ],
+    "ecoFriendlyFeatures": [
+      "Eco-friendly transportation",
+      "Conservation-focused trekking",
+      "Plastic-free zones"
+    ],
+    "maxGroupSize": 12,
+    "specialInstructions": [
+      "Pack light but warm",
+      "Be prepared for altitude changes",
+      "Respect the local alpine flora and fauna"
+    ]
+  },
+  {
+    "id": 8,
+    "adventureTitle": "Himalayan Panorama Trek",
+    "image": "https://i.ibb.co.com/JrMJw6r/Big-Story-Himalayan-Treks-Nepal-1653055597386.webp",
+    "categoryName": "Mountain Treks",
+    "shortDescription": "A shorter trek through the lesser-known parts of the Himalayas offering breathtaking panoramic views.",
+    "adventureCost": 1500,
+    "bookingAvailability": true,
+    "location": "Nepal",
+    "duration": "9 Days",
+    "adventureLevel": "Moderate",
+    "includedItems": [
+      "Trekking guide",
+      "Meals (breakfast, lunch, dinner)",
+      "Accommodation in lodges",
+      "Permits for trekking"
+    ],
+    "ecoFriendlyFeatures": [
+      "Minimal environmental impact",
+      "Support for local trekking communities",
+      "Eco-friendly accommodations"
+    ],
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Bring high-altitude trekking gear",
+      "Prepare for moderate trekking conditions",
+      "Follow responsible tourism practices"
+    ]
+  },
+  {
+    "id": 9,
+    "adventureTitle": "Mount Rainer Summit Expedition",
+    "image": "https://i.ibb.co.com/Vgjkgfc/RMI-guided-rainier-climb-mountineering-may-6-1.webp",
+    "categoryName": "Mountain Treks",
+    "shortDescription": "An exciting summit expedition to the majestic Mount Rainier in the Pacific Northwest.",
+    "adventureCost": 3500,
+    "bookingAvailability": true,
+    "location": "United States",
+    "duration": "10 Days",
+    "adventureLevel": "Advanced",
+    "includedItems": [
+      "Climbing permits",
+      "Guided summit expedition",
+      "Camping and climbing gear",
+      "Meals and water"
+    ],
+    "ecoFriendlyFeatures": [
+      "Waste-reduction programs",
+      "Environmentally conscious climbing practices",
+      "Promotion of sustainable mountaineering"
+    ],
+    "maxGroupSize": 8,
+    "specialInstructions": [
+      "Summit attempts require prior experience",
+      "Be prepared for high-altitude conditions",
+      "Respect wilderness areas and regulations"
+    ]
+  }
+]

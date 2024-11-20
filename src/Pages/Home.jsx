@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import Banner from "../components/Banner";
 import Cards from "../components/Cards";
 
@@ -7,8 +8,8 @@ const Home = () => {
       <div>
         <Banner></Banner>
       </div>
-      <section>
-        <Cards></Cards>
+      <section className="bg-[#0F1035] ">
+        <Outlet></Outlet>
       </section>
     </>
   );
