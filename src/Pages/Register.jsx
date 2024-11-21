@@ -53,7 +53,7 @@ const Register = () => {
         };
         updateProfile(auth.currentUser, profile)
           .then(() => {
-            console.log("user profile updated.");
+            
           })
           .catch((error) => console.log("user profile update error"));
         setUser(user);

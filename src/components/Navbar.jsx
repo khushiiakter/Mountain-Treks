@@ -50,8 +50,8 @@ const Navbar = () => {
   );
   return (
     <div className="navbar text-[#DCF2F1] ">
-      <div className="navbar-start">
-        <div className="dropdown">
+      <div className="navbar-start  ">
+        <div className="dropdown ">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +75,7 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className=" text-xl">Mountain Treks</a>
+        <a className=" md:text-xl ">Mountain Treks</a>
       </div>
       <div className="navbar-center  hidden lg:flex">
         <ul className="menu menu-horizontal  px-1 text-[#e1e4fa]">{links}</ul>
@@ -84,11 +84,11 @@ const Navbar = () => {
       <div className="navbar-end">
         {user ? (
           <>
-            <div className="relative group">
+            <div className="relative group hidden md:block">
               <img
                 src={user.photoURL || { profile }}
                 alt="Profile"
-                className="border-2 border-[#e3e5f3d5] w-11 mr-2 rounded-full object-cover cursor-pointer ml-16"
+                className="border-2 border-[#e3e5f3d5] w-11 h-11 mr-2 rounded-full object-cover cursor-pointer ml-16"
               />
               <div
                 className="absolute -right-4

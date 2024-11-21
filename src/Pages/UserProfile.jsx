@@ -25,7 +25,7 @@ const UserProfile = () => {
           <p className="md:text-3xl text-xl font-semibold">Email: {user?.email}</p>
           <div>
             <Link to="/update-profile" className="btn text-white bg-[#0F1035] hover:text-[#0F1035] hover:bg-[#0f10356c]    rounded-xl">
-              Register
+              Update Profile
             </Link>
           </div>
         </div>

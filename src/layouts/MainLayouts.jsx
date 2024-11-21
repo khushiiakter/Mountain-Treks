@@ -4,11 +4,14 @@ import { Outlet } from "react-router-dom";
 import Footer from "../components/Footer";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import DynamicTitle from "../components/DynamicTitle";
 
 const MainLayouts = () => {
   return (
     <div>
-      <nav className="px-6 bg-[#0F1035]  ">
+      <DynamicTitle></DynamicTitle>
+
+      <nav className="md:px-6 bg-[#0F1035]  -px-4">
         <Navbar></Navbar>
       </nav>
       <section className="">

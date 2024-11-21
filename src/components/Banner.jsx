@@ -1,6 +1,6 @@
 const Banner = () => {
   return (
-    <div className="carousel w-full md:h-[690px] h-screen">
+    <div className="carousel w-full  md:min-h-screen h-[400px]">
       <div id="banner1" className="carousel-item relative w-full bg-cover bg-no-repeat" style={{
         backgroundImage: "url(https://i.ibb.co.com/vwLzSHr/mihaly-koles-N050-NP-u6j-I-unsplash.jpg)"}}>
           <h1 className="text-4xl">kf </h1>
