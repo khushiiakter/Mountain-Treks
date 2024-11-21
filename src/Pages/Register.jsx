@@ -2,7 +2,11 @@ import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 
 import { useContext, useEffect, useState } from "react";
-import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import {
+  GoogleAuthProvider,
+  signInWithPopup,
+  updateProfile,
+} from "firebase/auth";
 
 const Register = () => {
   const { createNewUser, setUser, auth } = useContext(AuthContext);
@@ -21,11 +25,10 @@ const Register = () => {
 
   useEffect(() => {
     const user = auth.currentUser;
-    if(user){
+    if (user) {
       navigate("/");
     }
   }, [auth, navigate]);
-
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -44,6 +47,15 @@ const Register = () => {
     createNewUser(email, password)
       .then((result) => {
         const user = result.user;
+        const profile = {
+          photoURL: photo,
+          displayName: name,
+        };
+        updateProfile(auth.currentUser, profile)
+          .then(() => {
+            console.log("user profile updated.");
+          })
+          .catch((error) => console.log("user profile update error"));
         setUser(user);
         setError("");
         navigate("/");
@@ -110,7 +122,6 @@ const Register = () => {
               className="input input-bordered"
               required
             />
-           
           </div>
           <div className="form-control">
             <label className="label">
@@ -123,7 +134,7 @@ const Register = () => {
               className="input input-bordered"
               required
             />
-             {error && (
+            {error && (
               <label className="label text-sm text-red-700">{error}</label>
             )}
             {/* {error.login && (
@@ -142,7 +153,10 @@ const Register = () => {
           </div>
           <div className="divider text-black">OR</div>
 
-          <button onClick={handleGoogleLogin} className="btn btn-outline rounded-full">
+          <button
+            onClick={handleGoogleLogin}
+            className="btn btn-outline rounded-full"
+          >
             Continue with Google
           </button>
         </form>

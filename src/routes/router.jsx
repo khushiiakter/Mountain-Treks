@@ -8,11 +8,15 @@ import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import Cards from "../components/Cards";
 import AdventureDetails from "../Pages/AdventureDetails";
+import ErrorPage from "../Pages/ErrorPage";
+import PrivateRoutes from "./PrivateRoutes";
+import ForgetPassword from "../Pages/ForgetPassword";
 
 const router = createBrowserRouter([
     {
       path: "/",
       element: <MainLayouts></MainLayouts>,
+      errorElement: <ErrorPage></ErrorPage>,
       children: [
         {
             path: "/",
@@ -27,16 +31,16 @@ const router = createBrowserRouter([
         },
         {
             path: "/adventureDetails/:id",
-            element: <AdventureDetails></AdventureDetails>,
+            element: <PrivateRoutes><AdventureDetails></AdventureDetails></PrivateRoutes>,
             loader:({params}) => fetch('../mountain.json').then(res => res.json()),
         },
         {
             path: "/update-profile",
-            element: <UpdateProfile></UpdateProfile>
+            element:  <PrivateRoutes><UpdateProfile></UpdateProfile></PrivateRoutes>
         },
         {
             path: "/user-profile",
-            element: <UserProfile></UserProfile>
+            element: <PrivateRoutes><UserProfile></UserProfile></PrivateRoutes>,
         },
         {
           path: "/auth",
@@ -48,7 +52,11 @@ const router = createBrowserRouter([
             },
             {
               path: "/auth/register",
-              element: <Register></Register>
+              element: <Register></Register>,
+            },
+            {
+              path: "/auth/forget-password",
+              element: <ForgetPassword></ForgetPassword>,
             },
     
           ]

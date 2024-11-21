@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import "animate.css";
+import { toast } from "react-toastify";
 
 const AdventureDetails = () => {
   const data = useLoaderData();
@@ -19,7 +20,7 @@ const AdventureDetails = () => {
     if (currentHour >= 10 && currentHour <= 20) {
       window.open("https://meet.google.com", "_blank");
     } else {
-      alert("Consultation is available from 10:00 AM to 8:00 PM.");
+      toast("Consultation is available from 10:00 AM to 8:00 PM.");
     }
   };
   const {

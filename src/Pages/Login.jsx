@@ -1,13 +1,18 @@
-import { useContext, useState } from "react";
+import { useContext,  useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
-import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { GoogleAuthProvider,  signInWithPopup } from "firebase/auth";
+import { toast } from "react-toastify";
 
 const Login = () => {
   const { userLogIn, setUser, auth } = useContext(AuthContext);
-
+  
   const [error, setError] = useState("");
+  const [email, setEmail] = useState("")
   const navigate = useNavigate();
+  
+  
+
 
   const googleProvider = new GoogleAuthProvider();
 
@@ -42,7 +47,8 @@ const Login = () => {
         setError("Failed to login with Google.");
       });
   };
-
+  
+  
   return (
     <div className=" flex justify-center items-center md:py-7  bg-[#f2f4ff]">
       <div className="card bg-[#e3e5f3d5]  w-full  md:max-w-lg shrink-0 md:border-2 border-[#556180] md:rounded-3xl rounded-none md:p-9 px-1 py-6">
@@ -57,8 +63,11 @@ const Login = () => {
             <input
               name="email"
               type="email"
+              
               placeholder="email"
               className="input input-bordered"
+              value={email}
+              onChange={(e)=> setEmail(e.target.value)}
               required
             />
           </div>
@@ -77,10 +86,10 @@ const Login = () => {
               <label className="label text-sm text-red-700">{error}</label>
             )}
             
-            <label className="label">
-              <a href="#" className="label-text-alt link link-hover">
+            <label  className="label">
+              <Link to = "/auth/forget-password" state={{email}}  className="label-text-alt link link-hover">
                 Forgot password?
-              </a>
+              </Link>
             </label>
           </div>
           <div className="form-control mt-3">

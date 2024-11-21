@@ -1,19 +1,50 @@
 import { useContext } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import profile from "../assets/blank-profile-picture-973460_640.png";
 const Navbar = () => {
+  const location = useLocation();
   const { user, logOut } = useContext(AuthContext);
   const links = (
     <>
-      <li className="hover:bg-[#e1e4fa] hover:text-black hover:rounded-xl">
-        <NavLink to="/">Home</NavLink>
+      <li >
+        <NavLink
+          to="/"
+          onClick={(e) => e.currentTarget.blur()}
+          className={({ isActive }) =>
+            isActive
+              ? "bg-[#e1e4fa] text-[#0F1035]   rounded-lg  "
+              : "bg-[#0F1035] text-[#e1e4fa]   rounded-lg hover:bg-[#e1e4fa]  hover:text-[#0F1035]  "
+          }
+        >
+          Home
+        </NavLink>
       </li>
-      <li className="hover:bg-[#e1e4fa] hover:text-black hover:rounded-xl">
-        <NavLink to="/update-profile">Update Profile</NavLink>{" "}
+      <li >
+        <NavLink
+          to="/update-profile"
+          onClick={(e) => e.currentTarget.blur()}
+          className={({ isActive }) =>
+            isActive
+              ? "bg-[#e1e4fa] text-[#0F1035]    rounded-lg  "
+              : "bg-[#0F1035] text-[#e1e4fa]    rounded-lg hover:bg-[#e1e4fa]  hover:text-[#0F1035]    "
+          }
+        >
+          Update Profile
+        </NavLink>
       </li>
-      <li className="hover:bg-[#e1e4fa] hover:text-black hover:rounded-xl">
-        <NavLink to="/user-profile">User Profile</NavLink>
+      <li >
+        <NavLink
+          to="/user-profile"
+          onClick={(e) => e.currentTarget.blur()}
+          className={({ isActive }) =>
+            isActive
+              ? "bg-[#e1e4fa] text-[#0F1035]   rounded-lg  "
+              : "bg-[#0F1035] text-[#e1e4fa]    rounded-lg  hover:bg-[#e1e4fa]  hover:text-[#0F1035]   "
+          }
+        >
+          User Profile
+        </NavLink>
       </li>
     </>
   );
@@ -39,7 +70,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-[#0F1035]  rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            className="menu menu-sm dropdown-content bg-[#0F1035] text-[#e1e4fa] rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             {links}
           </ul>
@@ -47,7 +78,7 @@ const Navbar = () => {
         <a className=" text-xl">Mountain Treks</a>
       </div>
       <div className="navbar-center  hidden lg:flex">
-        <ul className="menu menu-horizontal  px-1 ">{links}</ul>
+        <ul className="menu menu-horizontal  px-1 text-[#e1e4fa]">{links}</ul>
       </div>
 
       <div className="navbar-end">
@@ -55,22 +86,26 @@ const Navbar = () => {
           <>
             <div className="relative group">
               <img
-                src={user.photoURL || {profile}}
+                src={user.photoURL || { profile }}
                 alt="Profile"
                 className="border-2 border-[#e3e5f3d5] w-11 mr-2 rounded-full object-cover cursor-pointer ml-16"
               />
-              <div className="absolute -right-4
-               top-[60px] max-w-max bg-gray-800 text-white text-sm shadow-lg p-2 rounded hidden group-hover:block">
+              <div
+                className="absolute -right-4
+               top-[60px] max-w-max bg-gray-800 text-white text-sm shadow-lg p-2 rounded hidden group-hover:block"
+              >
                 {user.displayName || "User"}
               </div>
             </div>
-            <Link onClick={logOut} className="btn bg-[#e1e4fa] text-[#0F1035] hover:bg-[#e3e5f3d5] ">
+            <Link
+              onClick={logOut}
+              className="btn bg-[#e1e4fa] text-[#0F1035] hover:bg-[#e3e5f3d5] "
+            >
               Log Out
             </Link>
           </>
         ) : (
           <>
-            
             <Link
               to="/auth/login"
               className="btn px-5 bg-[#e1e4fa] text-[#0F1035] transition duration-300 hover:bg-[#e3e5f3d5]"
