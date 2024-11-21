@@ -3,13 +3,16 @@ import { useEffect } from "react";
 
 const BookingSection = () => {
   useEffect(() => {
-    AOS.init({ duration: 1200 });
+    if(window.innerWidth > 768 ){
+      AOS.init({ duration: 1200 });
+    }
+    
   }, []);
   return (
     <div className="py-16 ">
-      <div className="container bg-white p-7  rounded-2xl mx-auto flex flex-col lg:flex-row justify-between  gap-10">
+      <div className="container bg-white md:p-7 p-4 rounded-2xl mx-auto flex flex-col lg:flex-row justify-between  gap-10">
         {/* Left Section */}
-        <div className="lg:w-1/2 flex flex-col justify-between" data-aos="fade-right" >
+        <div className="lg:w-1/2  flex flex-col justify-between" data-aos="fade-right" >
           <h3 className="text-[#0F1035] mt-4 text-xl uppercase tracking-wide font-semibold ">
             Booking Now
           </h3>
@@ -31,7 +34,7 @@ const BookingSection = () => {
 
         {/* Right Section */}
         <div
-          className="lg:w-1/2 bg-[#0F1035] text-white rounded-2xl shadow-lg p-8"
+          className="lg:w-1/2  bg-[#0F1035] text-white rounded-2xl shadow-lg p-8"
           data-aos="fade-left"
         >
           <form className="space-y-6">
@@ -70,7 +73,7 @@ const BookingSection = () => {
                 className="input w-full bg-white text-black placeholder-gray-600"
               />
             </div>
-            <div className="flex gap-4">
+            <div className="flex flex-col md:flex-row gap-4">
               <input
                 type="date"
                 className="input w-full bg-white text-black placeholder-gray-600"
