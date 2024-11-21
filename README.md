@@ -1,8 +1,47 @@
-# React + Vite
+# Mountain Treks
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **Mountain Treks**, a platform designed to help adventure enthusiasts plan and book unforgettable hiking experiences. Whether you're looking for serene escapes or thrilling expeditions, we've got you covered.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Live URL
+
+[Visit Mountain Treks]()  
+
+---
+
+##  Purpose
+
+The purpose of **Mountain Treks** is to provide users with:
+- A seamless way to explore hiking destinations.
+- Booking options for guided treks.
+- Detailed itineraries, packages, and custom requests.
+
+---
+
+##  Key Features
+
+- **Interactive Video Section**: A visually engaging section with background video and animations.
+- **Responsive Design**: Fully responsive and mobile-friendly interface.
+- **Booking Form**: Users can book treks by filling out a detailed form with add-ons and special requests.
+- **Animated Sections**: Smooth animations using the [AOS](https://michalsnik.github.io/aos/) library.
+- **Dynamic Footer**: Relevant links and information tailored to our platform.
+
+---
+
+##  Tech Stack & Packages Used
+
+This project was built using the following technologies and npm packages:
+
+### Frontend:
+- **React.js**: For building the user interface.
+- **Tailwind CSS**: For fast and responsive styling.
+- **AOS (Animate On Scroll)**: For smooth animations on scrolling.
+
+### Packages Installed:
+
+ react react-dom react-scripts,
+ aos,
+ toastify,
+
+
