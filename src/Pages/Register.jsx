@@ -7,6 +7,7 @@ import {
   signInWithPopup,
   updateProfile,
 } from "firebase/auth";
+import { toast } from "react-toastify";
 
 const Register = () => {
   const { createNewUser, setUser, auth } = useContext(AuthContext);
@@ -55,7 +56,7 @@ const Register = () => {
           .then(() => {
             
           })
-          .catch((error) => console.log("user profile update error"));
+          .catch((error) => toast("user profile update error"));
         setUser(user);
         setError("");
         navigate("/");

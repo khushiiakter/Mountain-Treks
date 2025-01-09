@@ -43,7 +43,7 @@ const Login = () => {
       })
 
       .catch((error) => {
-        console.log("Google Login Error:", error.message);
+      
         setError("Failed to login with Google.");
       });
   };
